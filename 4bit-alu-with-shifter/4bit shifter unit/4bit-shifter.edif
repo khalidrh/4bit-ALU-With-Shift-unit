@@ -1,0 +1,6715 @@
+( edif 4bit-shifter
+ ( edifVersion 2 0 0 )
+ ( edifLevel 0 )
+ ( keywordMap
+  ( keywordLevel 0 ) )
+ ( status
+  ( written
+   ( timeStamp 2025 03 13 14 07 31 )
+   ( program "Electric VLSI Design System, version 9.07" )
+   ( comment "EDIF Writer" )
+   ( dataOrigin "newproj" ) ) )
+ ( library ELECTRIC_PRIMS
+  ( edifLevel 0 )
+  ( technology
+   ( numberDefinition
+    ( scale 160 ( e 2540000 -8 )
+     ( unit DISTANCE ) ) )
+   ( figureGroup ARTWORK )
+   ( figureGroup WIRE )
+   ( figureGroup BUS ) )
+  ( figureGroup Metal1
+   ( property layerNumber
+    ( integer 49 ) ) )
+  ( figureGroup Metal2
+   ( property layerNumber
+    ( integer 51 ) ) )
+  ( figureGroup Metal3
+   ( property layerNumber
+    ( integer 62 ) ) )
+  ( figureGroup Metal4
+   ( property layerNumber
+    ( integer 31 ) ) )
+  ( figureGroup Metal5
+   ( property layerNumber
+    ( integer 33 ) ) )
+  ( figureGroup Metal6
+   ( property layerNumber
+    ( integer 37 ) ) )
+  ( figureGroup Polysilicon1
+   ( property layerNumber
+    ( integer 46 ) ) )
+  ( figureGroup Polysilicon2
+   ( property layerNumber
+    ( integer 56 ) ) )
+  ( figureGroup PActive
+   ( property layerNumber
+    ( integer 43 ) ) )
+  ( figureGroup NActive
+   ( property layerNumber
+    ( integer 43 ) ) )
+  ( figureGroup PSelect
+   ( property layerNumber
+    ( integer 44 ) ) )
+  ( figureGroup NSelect
+   ( property layerNumber
+    ( integer 45 ) ) )
+  ( figureGroup PWell
+   ( property layerNumber
+    ( integer 41 ) ) )
+  ( figureGroup NWell
+   ( property layerNumber
+    ( integer 42 ) ) )
+  ( figureGroup PolyCut
+   ( property layerNumber
+    ( integer 25 ) ) )
+  ( figureGroup ActiveCut
+   ( property layerNumber
+    ( integer 25 ) ) )
+  ( figureGroup Via1
+   ( property layerNumber
+    ( integer 50 ) ) )
+  ( figureGroup Via2
+   ( property layerNumber
+    ( integer 61 ) ) )
+  ( figureGroup Via3
+   ( property layerNumber
+    ( integer 30 ) ) )
+  ( figureGroup Via4
+   ( property layerNumber
+    ( integer 32 ) ) )
+  ( figureGroup Via5
+   ( property layerNumber
+    ( integer 36 ) ) )
+  ( figureGroup Passivation
+   ( property layerNumber
+    ( integer 52 ) ) )
+  ( figureGroup TransistorPoly
+   ( property layerNumber
+    ( integer 46 ) ) )
+  ( figureGroup PolyCap
+   ( property layerNumber
+    ( integer 28 ) ) )
+  ( figureGroup PActiveWell
+   ( property layerNumber
+    ( integer 43 ) ) )
+  ( figureGroup SilicideBlock
+   ( property layerNumber
+    ( integer 29 ) ) )
+  ( figureGroup ThickActive
+   ( property layerNumber
+    ( integer 60 ) ) )
+  ( figureGroup PadFrame
+   ( property layerNumber
+    ( integer 26 ) ) )
+  ( figureGroup PBase
+   ( property layerNumber
+    ( integer 58 ) ) )
+  ( figureGroup HiRes
+   ( property layerNumber
+    ( integer 34 ) ) )
+  ( cell Metal1Metal2Con
+   ( cellType generic )
+   ( comment "Tech: mocmos, Node: Metal-1-Metal-2-Con, Func: CONTACT" )
+   ( view layout
+    ( viewType MASKLAYOUT )
+    ( interface
+     ( port metal1metal2 )
+     ( protectionFrame ) )
+    ( contents
+     ( portImplementation
+      ( name metal1metal2
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( rectangle
+         ( pt -20 -20 )
+         ( pt 20 20 ) ) ) ) )
+     ( figureGroupOverride Metal1 )
+     ( rectangle
+      ( pt -40 -40 )
+      ( pt 40 40 ) )
+     ( figureGroupOverride Metal2 )
+     ( rectangle
+      ( pt -40 -40 )
+      ( pt 40 40 ) )
+     ( figureGroupOverride Via1 )
+     ( rectangle
+      ( pt -20 -20 )
+      ( pt 20 20 ) ) ) ) )
+  ( cell Metal1NActiveCon
+   ( cellType generic )
+   ( comment "Tech: mocmos, Node: Metal-1-N-Active-Con, Func: CONTACT" )
+   ( view layout
+    ( viewType MASKLAYOUT )
+    ( interface
+     ( port metal1nact )
+     ( protectionFrame ) )
+    ( contents
+     ( portImplementation
+      ( name metal1nact
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( rectangle
+         ( pt -10 -10 )
+         ( pt 10 10 ) ) ) ) )
+     ( figureGroupOverride Metal1 )
+     ( rectangle
+      ( pt -40 -40 )
+      ( pt 40 40 ) )
+     ( figureGroupOverride NActive )
+     ( rectangle
+      ( pt -50 -50 )
+      ( pt 50 50 ) )
+     ( figureGroupOverride PWell )
+     ( rectangle
+      ( pt -170 -170 )
+      ( pt 170 170 ) )
+     ( figureGroupOverride NSelect )
+     ( rectangle
+      ( pt -90 -90 )
+      ( pt 90 90 ) )
+     ( figureGroupOverride ActiveCut )
+     ( rectangle
+      ( pt -20 -20 )
+      ( pt 20 20 ) ) ) ) )
+  ( cell Metal1NWellCon
+   ( cellType generic )
+   ( comment "Tech: mocmos, Node: Metal-1-N-Well-Con, Func: WELL" )
+   ( view layout
+    ( viewType MASKLAYOUT )
+    ( interface
+     ( port metal1substrate )
+     ( protectionFrame ) )
+    ( contents
+     ( portImplementation
+      ( name metal1substrate
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( rectangle
+         ( pt -10 -10 )
+         ( pt 10 10 ) ) ) ) )
+     ( figureGroupOverride Metal1 )
+     ( rectangle
+      ( pt -40 -40 )
+      ( pt 40 40 ) )
+     ( figureGroupOverride NActive )
+     ( rectangle
+      ( pt -50 -50 )
+      ( pt 50 50 ) )
+     ( figureGroupOverride NWell )
+     ( rectangle
+      ( pt -110 -110 )
+      ( pt 110 110 ) )
+     ( figureGroupOverride NSelect )
+     ( rectangle
+      ( pt -90 -90 )
+      ( pt 90 90 ) )
+     ( figureGroupOverride ActiveCut )
+     ( rectangle
+      ( pt -20 -20 )
+      ( pt 20 20 ) ) ) ) )
+  ( cell Metal1PActiveCon
+   ( cellType generic )
+   ( comment "Tech: mocmos, Node: Metal-1-P-Active-Con, Func: CONTACT" )
+   ( view layout
+    ( viewType MASKLAYOUT )
+    ( interface
+     ( port metal1pact )
+     ( protectionFrame ) )
+    ( contents
+     ( portImplementation
+      ( name metal1pact
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( rectangle
+         ( pt -10 -10 )
+         ( pt 10 10 ) ) ) ) )
+     ( figureGroupOverride Metal1 )
+     ( rectangle
+      ( pt -40 -40 )
+      ( pt 40 40 ) )
+     ( figureGroupOverride PActive )
+     ( rectangle
+      ( pt -50 -50 )
+      ( pt 50 50 ) )
+     ( figureGroupOverride NWell )
+     ( rectangle
+      ( pt -170 -170 )
+      ( pt 170 170 ) )
+     ( figureGroupOverride PSelect )
+     ( rectangle
+      ( pt -90 -90 )
+      ( pt 90 90 ) )
+     ( figureGroupOverride ActiveCut )
+     ( rectangle
+      ( pt -20 -20 )
+      ( pt 20 20 ) ) ) ) )
+  ( cell Metal1PWellCon
+   ( cellType generic )
+   ( comment "Tech: mocmos, Node: Metal-1-P-Well-Con, Func: SUBSTRATE" )
+   ( view layout
+    ( viewType MASKLAYOUT )
+    ( interface
+     ( port metal1well )
+     ( protectionFrame ) )
+    ( contents
+     ( portImplementation
+      ( name metal1well
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( rectangle
+         ( pt -10 -10 )
+         ( pt 10 10 ) ) ) ) )
+     ( figureGroupOverride Metal1 )
+     ( rectangle
+      ( pt -40 -40 )
+      ( pt 40 40 ) )
+     ( figureGroupOverride PActiveWell )
+     ( rectangle
+      ( pt -50 -50 )
+      ( pt 50 50 ) )
+     ( figureGroupOverride PWell )
+     ( rectangle
+      ( pt -110 -110 )
+      ( pt 110 110 ) )
+     ( figureGroupOverride PSelect )
+     ( rectangle
+      ( pt -90 -90 )
+      ( pt 90 90 ) )
+     ( figureGroupOverride ActiveCut )
+     ( rectangle
+      ( pt -20 -20 )
+      ( pt 20 20 ) ) ) ) )
+  ( cell Metal1Polysilicon1Con
+   ( cellType generic )
+   ( comment "Tech: mocmos, Node: Metal-1-Polysilicon-1-Con, Func: CONTACT" )
+   ( view layout
+    ( viewType MASKLAYOUT )
+    ( interface
+     ( port metal1polysilicon1 )
+     ( protectionFrame ) )
+    ( contents
+     ( portImplementation
+      ( name metal1polysilicon1
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( rectangle
+         ( pt -10 -10 )
+         ( pt 10 10 ) ) ) ) )
+     ( figureGroupOverride Metal1 )
+     ( rectangle
+      ( pt -40 -40 )
+      ( pt 40 40 ) )
+     ( figureGroupOverride Polysilicon1 )
+     ( rectangle
+      ( pt -50 -50 )
+      ( pt 50 50 ) )
+     ( figureGroupOverride PolyCut )
+     ( rectangle
+      ( pt -20 -20 )
+      ( pt 20 20 ) ) ) ) )
+  ( cell NTransistor
+   ( cellType generic )
+   ( comment "Tech: mocmos, Node: N-Transistor, Func: TRANMOS" )
+   ( view layout
+    ( viewType MASKLAYOUT )
+    ( interface
+     ( port polyleft )
+     ( port difftop )
+     ( port polyright )
+     ( port diffbottom )
+     ( port ntranswell )
+     ( protectionFrame ) )
+    ( contents
+     ( portImplementation
+      ( name polyleft
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( dot
+         ( pt -70 0 ) ) ) ) )
+     ( portImplementation
+      ( name difftop
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( rectangle
+         ( pt 0 70 )
+         ( pt 0 80 ) ) ) ) )
+     ( portImplementation
+      ( name polyright
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( dot
+         ( pt 70 0 ) ) ) ) )
+     ( portImplementation
+      ( name diffbottom
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( rectangle
+         ( pt 0 -80 )
+         ( pt 0 -70 ) ) ) ) )
+     ( portImplementation
+      ( name ntranswell
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( dot
+         ( pt 0 0 ) ) ) ) )
+     ( figureGroupOverride NActive )
+     ( rectangle
+      ( pt -30 -80 )
+      ( pt 30 80 ) )
+     ( figureGroupOverride TransistorPoly )
+     ( rectangle
+      ( pt -70 -20 )
+      ( pt 70 20 ) )
+     ( figureGroupOverride PWell )
+     ( rectangle
+      ( pt -150 -200 )
+      ( pt 150 200 ) )
+     ( figureGroupOverride NSelect )
+     ( rectangle
+      ( pt -70 -120 )
+      ( pt 70 120 ) ) ) ) )
+  ( cell PTransistor
+   ( cellType generic )
+   ( comment "Tech: mocmos, Node: P-Transistor, Func: TRAPMOS" )
+   ( view layout
+    ( viewType MASKLAYOUT )
+    ( interface
+     ( port polyleft )
+     ( port difftop )
+     ( port polyright )
+     ( port diffbottom )
+     ( port ptranswell )
+     ( protectionFrame ) )
+    ( contents
+     ( portImplementation
+      ( name polyleft
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( dot
+         ( pt -70 0 ) ) ) ) )
+     ( portImplementation
+      ( name difftop
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( rectangle
+         ( pt 0 70 )
+         ( pt 0 80 ) ) ) ) )
+     ( portImplementation
+      ( name polyright
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( dot
+         ( pt 70 0 ) ) ) ) )
+     ( portImplementation
+      ( name diffbottom
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( rectangle
+         ( pt 0 -80 )
+         ( pt 0 -70 ) ) ) ) )
+     ( portImplementation
+      ( name ptranswell
+       ( display
+        ( figureGroupOverride WIRE
+         ( textHeight 11 ) ) ) )
+      ( connectLocation
+       ( figure WIRE
+        ( dot
+         ( pt 0 0 ) ) ) ) )
+     ( figureGroupOverride PActive )
+     ( rectangle
+      ( pt -30 -80 )
+      ( pt 30 80 ) )
+     ( figureGroupOverride TransistorPoly )
+     ( rectangle
+      ( pt -70 -20 )
+      ( pt 70 20 ) )
+     ( figureGroupOverride NWell )
+     ( rectangle
+      ( pt -150 -200 )
+      ( pt 150 200 ) )
+     ( figureGroupOverride PSelect )
+     ( rectangle
+      ( pt -70 -120 )
+      ( pt 70 120 ) ) ) ) ) )
+ ( library newproj
+  ( edifLevel 0 )
+  ( technology ( numberDefinition
+    ( scale 160 ( e 2540000 -8 )
+     ( unit DISTANCE ) ) )
+   ( figureGroup ARTWORK )
+   ( figureGroup WIRE )
+   ( figureGroup BUS ) )
+  ( cell X4bitshifter
+   ( cellType generic )
+   ( view layout
+    ( viewType MASKLAYOUT )
+    ( interface
+     ( port GND
+      ( direction INPUT ) )
+     ( port VDD
+      ( direction INPUT ) )
+     ( port a0
+      ( direction INPUT ) )
+     ( port a1
+      ( direction INPUT ) )
+     ( port a2
+      ( direction INPUT ) )
+     ( port a3
+      ( direction INPUT ) )
+     ( port h0
+      ( direction INPUT ) )
+     ( port h1
+      ( direction INPUT ) )
+     ( port h2
+      ( direction INPUT ) )
+     ( port h3
+      ( direction INPUT ) )
+     ( port s2LR
+      ( direction INPUT ) )
+     ( port s3AL
+      ( direction INPUT ) ) )
+    ( contents
+     ( instance ( rename contact_0 "contact@0" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1930 1640 ) ) ) )
+     ( instance ( rename contact_1 "contact@1" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1730 1640 ) ) ) )
+     ( instance ( rename contact_2 "contact@2" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1540 1640 ) ) ) )
+     ( instance ( rename contact_3 "contact@3" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1950 380 ) ) ) )
+     ( instance ( rename contact_4 "contact@4" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1600 380 ) ) ) )
+     ( instance ( rename contact_5 "contact@5" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1690 1150 ) ) ) )
+     ( instance ( rename contact_6 "contact@6" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1910 840 ) ) ) )
+     ( instance ( rename contact_7 "contact@7" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1080 1640 ) ) ) )
+     ( instance ( rename contact_8 "contact@8" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -880 1640 ) ) ) )
+     ( instance ( rename contact_9 "contact@9" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -690 1640 ) ) ) )
+     ( instance ( rename contact_10 "contact@10" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1100 380 ) ) ) )
+     ( instance ( rename contact_11 "contact@11" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -750 380 ) ) ) )
+     ( instance ( rename contact_12 "contact@12" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -840 1010 ) ) ) )
+     ( instance ( rename contact_13 "contact@13" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1060 700 ) ) ) )
+     ( instance ( rename contact_14 "contact@14" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -230 1640 ) ) ) )
+     ( instance ( rename contact_15 "contact@15" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -30 1640 ) ) ) )
+     ( instance ( rename contact_16 "contact@16" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 160 1640 ) ) ) )
+     ( instance ( rename contact_17 "contact@17" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -250 380 ) ) ) )
+     ( instance ( rename contact_18 "contact@18" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 100 380 ) ) ) )
+     ( instance ( rename contact_19 "contact@19" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 10 1180 ) ) ) )
+     ( instance ( rename contact_20 "contact@20" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -210 890 ) ) ) )
+     ( instance ( rename contact_21 "contact@21" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -2650 340 ) ) ) )
+     ( instance ( rename contact_22 "contact@22" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -2470 340 ) ) ) )
+     ( instance ( rename contact_23 "contact@23" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -2650 1530 ) ) ) )
+     ( instance ( rename contact_24 "contact@24" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -2470 1530 ) ) ) )
+     ( instance ( rename contact_25 "contact@25" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -2750 1090 ) ) ) )
+     ( instance ( rename contact_26 "contact@26" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 0 1180 ) ) ) )
+     ( instance ( rename contact_27 "contact@27" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1490 1180 ) ) ) )
+     ( instance ( rename contact_28 "contact@28" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1060 700 ) ) ) )
+     ( instance ( rename contact_29 "contact@29" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1910 840 ) ) ) )
+     ( instance ( rename contact_30 "contact@30" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -840 1010 ) ) ) )
+     ( instance ( rename contact_31 "contact@31" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -2750 1010 ) ) ) )
+     ( instance ( rename contact_32 "contact@32" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 0 1180 ) ) ) )
+     ( instance ( rename contact_33 "contact@33" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 1390 1640 ) ) ) )
+     ( instance ( rename contact_34 "contact@34" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 1590 1640 ) ) ) )
+     ( instance ( rename contact_35 "contact@35" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 1780 1640 ) ) ) )
+     ( instance ( rename contact_36 "contact@36" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 1370 380 ) ) ) )
+     ( instance ( rename contact_37 "contact@37" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 1720 380 ) ) ) )
+     ( instance ( rename contact_38 "contact@38" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 1630 1150 ) ) ) )
+     ( instance ( rename contact_39 "contact@39" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 1410 860 ) ) ) )
+     ( instance ( rename contact_40 "contact@40" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 2240 1640 ) ) ) )
+     ( instance ( rename contact_41 "contact@41" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 2440 1640 ) ) ) )
+     ( instance ( rename contact_42 "contact@42" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 2630 1640 ) ) ) )
+     ( instance ( rename contact_43 "contact@43" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 2220 380 ) ) ) )
+     ( instance ( rename contact_44 "contact@44" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 2570 380 ) ) ) )
+     ( instance ( rename contact_45 "contact@45" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 2480 1010 ) ) ) )
+     ( instance ( rename contact_46 "contact@46" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 2260 610 ) ) ) )
+     ( instance ( rename contact_47 "contact@47" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 3090 1640 ) ) ) )
+     ( instance ( rename contact_48 "contact@48" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 3290 1640 ) ) ) )
+     ( instance ( rename contact_49 "contact@49" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 3480 1640 ) ) ) )
+     ( instance ( rename contact_50 "contact@50" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 3070 380 ) ) ) )
+     ( instance ( rename contact_51 "contact@51" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 3420 380 ) ) ) )
+     ( instance ( rename contact_52 "contact@52" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 3330 1180 ) ) ) )
+     ( instance ( rename contact_53 "contact@53" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 3110 890 ) ) ) )
+     ( instance ( rename contact_54 "contact@54" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 670 340 ) ) ) )
+     ( instance ( rename contact_55 "contact@55" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 850 340 ) ) ) )
+     ( instance ( rename contact_56 "contact@56" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 670 1530 ) ) ) )
+     ( instance ( rename contact_57 "contact@57" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 850 1530 ) ) ) )
+     ( instance ( rename contact_58 "contact@58" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 570 1090 ) ) ) )
+     ( instance ( rename contact_59 "contact@59" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 3320 1180 ) ) ) )
+     ( instance ( rename contact_60 "contact@60" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 1830 1180 ) ) ) )
+     ( instance ( rename contact_61 "contact@61" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 2260 600 ) ) ) )
+     ( instance ( rename contact_62 "contact@62" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 1410 860 ) ) ) )
+     ( instance ( rename contact_63 "contact@63" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 2480 1010 ) ) ) )
+     ( instance ( rename contact_64 "contact@64" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 570 1010 ) ) ) )
+     ( instance ( rename contact_65 "contact@65" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 3320 1180 ) ) ) )
+     ( instance ( rename contact_66 "contact@66" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -5540 1640 ) ) ) )
+     ( instance ( rename contact_67 "contact@67" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -5340 1640 ) ) ) )
+     ( instance ( rename contact_68 "contact@68" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -5150 1640 ) ) ) )
+     ( instance ( rename contact_69 "contact@69" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -5560 380 ) ) ) )
+     ( instance ( rename contact_70 "contact@70" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -5210 380 ) ) ) )
+     ( instance ( rename contact_71 "contact@71" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -5300 1150 ) ) ) )
+     ( instance ( rename contact_73 "contact@73" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -4690 1640 ) ) ) )
+     ( instance ( rename contact_74 "contact@74" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -4490 1640 ) ) ) )
+     ( instance ( rename contact_75 "contact@75" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -4300 1640 ) ) ) )
+     ( instance ( rename contact_76 "contact@76" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -4710 380 ) ) ) )
+     ( instance ( rename contact_77 "contact@77" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -4360 380 ) ) ) )
+     ( instance ( rename contact_78 "contact@78" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -4450 1040 ) ) ) )
+     ( instance ( rename contact_79 "contact@79" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -4600 850 ) ) ) )
+     ( instance ( rename contact_80 "contact@80" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -3840 1640 ) ) ) )
+     ( instance ( rename contact_81 "contact@81" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -3640 1640 ) ) ) )
+     ( instance ( rename contact_82 "contact@82" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -3450 1640 ) ) ) )
+     ( instance ( rename contact_83 "contact@83" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -3860 380 ) ) ) )
+     ( instance ( rename contact_84 "contact@84" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -3510 380 ) ) ) )
+     ( instance ( rename contact_85 "contact@85" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -3600 1180 ) ) ) )
+     ( instance ( rename contact_86 "contact@86" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -3820 890 ) ) ) )
+     ( instance ( rename contact_87 "contact@87" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -6260 340 ) ) ) )
+     ( instance ( rename contact_88 "contact@88" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -6080 340 ) ) ) )
+     ( instance ( rename contact_89 "contact@89" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -6260 1530 ) ) ) )
+     ( instance ( rename contact_90 "contact@90" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -6080 1530 ) ) ) )
+     ( instance ( rename contact_92 "contact@92" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -3610 1180 ) ) ) )
+     ( instance ( rename contact_93 "contact@93" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -5100 1180 ) ) ) )
+     ( instance ( rename contact_94 "contact@94" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -4600 850 ) ) ) )
+     ( instance ( rename contact_96 "contact@96" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -4450 1040 ) ) ) )
+     ( instance ( rename contact_98 "contact@98" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -3610 1180 ) ) ) )
+     ( instance ( rename contact_99 "contact@99" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 4830 1640 ) ) ) )
+     ( instance ( rename contact_100 "contact@100" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5030 1640 ) ) ) )
+     ( instance ( rename contact_101 "contact@101" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5220 1640 ) ) ) )
+     ( instance ( rename contact_102 "contact@102" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 4810 380 ) ) ) )
+     ( instance ( rename contact_103 "contact@103" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5160 380 ) ) ) )
+     ( instance ( rename contact_104 "contact@104" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5070 1150 ) ) ) )
+     ( instance ( rename contact_105 "contact@105" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 4850 840 ) ) ) )
+     ( instance ( rename contact_106 "contact@106" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5680 1640 ) ) ) )
+     ( instance ( rename contact_107 "contact@107" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5880 1640 ) ) ) )
+     ( instance ( rename contact_108 "contact@108" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 6070 1640 ) ) ) )
+     ( instance ( rename contact_109 "contact@109" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5660 380 ) ) ) )
+     ( instance ( rename contact_110 "contact@110" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 6010 380 ) ) ) )
+     ( instance ( rename contact_111 "contact@111" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5920 1010 ) ) ) )
+     ( instance ( rename contact_112 "contact@112" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5700 700 ) ) ) )
+     ( instance ( rename contact_113 "contact@113" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 6530 1640 ) ) ) )
+     ( instance ( rename contact_114 "contact@114" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 6730 1640 ) ) ) )
+     ( instance ( rename contact_115 "contact@115" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 6920 1640 ) ) ) )
+     ( instance ( rename contact_116 "contact@116" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 6510 380 ) ) ) )
+     ( instance ( rename contact_117 "contact@117" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 6860 380 ) ) ) )
+     ( instance ( rename contact_118 "contact@118" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 6770 1180 ) ) ) )
+     ( instance ( rename contact_119 "contact@119" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 6550 890 ) ) ) )
+     ( instance ( rename contact_120 "contact@120" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 4110 340 ) ) ) )
+     ( instance ( rename contact_121 "contact@121" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 4290 340 ) ) ) )
+     ( instance ( rename contact_122 "contact@122" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 4110 1530 ) ) ) )
+     ( instance ( rename contact_123 "contact@123" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 4290 1530 ) ) ) )
+     ( instance ( rename contact_124 "contact@124" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 4010 1090 ) ) ) )
+     ( instance ( rename contact_125 "contact@125" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 6760 1180 ) ) ) )
+     ( instance ( rename contact_126 "contact@126" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5270 1180 ) ) ) )
+     ( instance ( rename contact_127 "contact@127" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5700 700 ) ) ) )
+     ( instance ( rename contact_128 "contact@128" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 4850 840 ) ) ) )
+     ( instance ( rename contact_129 "contact@129" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5920 1010 ) ) ) )
+     ( instance ( rename contact_130 "contact@130" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 4010 1010 ) ) ) )
+     ( instance ( rename contact_131 "contact@131" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 6760 1180 ) ) ) )
+     ( instance ( rename contact_132 "contact@132" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -9020 1640 ) ) ) )
+     ( instance ( rename contact_133 "contact@133" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -8820 1640 ) ) ) )
+     ( instance ( rename contact_134 "contact@134" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -8630 1640 ) ) ) )
+     ( instance ( rename contact_135 "contact@135" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -9040 380 ) ) ) )
+     ( instance ( rename contact_136 "contact@136" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -8690 380 ) ) ) )
+     ( instance ( rename contact_137 "contact@137" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -8780 1150 ) ) ) )
+     ( instance ( rename contact_138 "contact@138" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -9000 840 ) ) ) )
+     ( instance ( rename contact_139 "contact@139" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -8170 1640 ) ) ) )
+     ( instance ( rename contact_140 "contact@140" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -7970 1640 ) ) ) )
+     ( instance ( rename contact_141 "contact@141" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -7780 1640 ) ) ) )
+     ( instance ( rename contact_142 "contact@142" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -8190 380 ) ) ) )
+     ( instance ( rename contact_143 "contact@143" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -7840 380 ) ) ) )
+     ( instance ( rename contact_144 "contact@144" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -7930 1010 ) ) ) )
+     ( instance ( rename contact_145 "contact@145" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -8150 700 ) ) ) )
+     ( instance ( rename contact_146 "contact@146" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -7320 1640 ) ) ) )
+     ( instance ( rename contact_147 "contact@147" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -7120 1640 ) ) ) )
+     ( instance ( rename contact_148 "contact@148" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -6930 1640 ) ) ) )
+     ( instance ( rename contact_149 "contact@149" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -7340 380 ) ) ) )
+     ( instance ( rename contact_150 "contact@150" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -6990 380 ) ) ) )
+     ( instance ( rename contact_151 "contact@151" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -7080 1180 ) ) ) )
+     ( instance ( rename contact_152 "contact@152" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -7300 890 ) ) ) )
+     ( instance ( rename contact_153 "contact@153" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -9740 340 ) ) ) )
+     ( instance ( rename contact_154 "contact@154" )
+      ( viewRef symbol ( cellRef Metal1NActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -9560 340 ) ) ) )
+     ( instance ( rename contact_155 "contact@155" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -9740 1530 ) ) ) )
+     ( instance ( rename contact_156 "contact@156" )
+      ( viewRef symbol ( cellRef Metal1PActiveCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -9560 1530 ) ) ) )
+     ( instance ( rename contact_157 "contact@157" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -9840 1090 ) ) ) )
+     ( instance ( rename contact_158 "contact@158" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -7090 1180 ) ) ) )
+     ( instance ( rename contact_159 "contact@159" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -8580 1180 ) ) ) )
+     ( instance ( rename contact_160 "contact@160" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -8150 700 ) ) ) )
+     ( instance ( rename contact_161 "contact@161" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -9000 840 ) ) ) )
+     ( instance ( rename contact_162 "contact@162" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -7930 1010 ) ) ) )
+     ( instance ( rename contact_163 "contact@163" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -9840 1010 ) ) ) )
+     ( instance ( rename contact_164 "contact@164" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -7090 1180 ) ) ) )
+     ( instance ( rename contact_165 "contact@165" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -9330 840 ) ) ) )
+     ( instance ( rename contact_166 "contact@166" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -6880 840 ) ) ) )
+     ( instance ( rename contact_167 "contact@167" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -6670 1040 ) ) ) )
+     ( instance ( rename contact_168 "contact@168" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -6670 1320 ) ) ) )
+     ( instance ( rename contact_169 "contact@169" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -5550 1890 ) ) ) )
+     ( instance ( rename contact_170 "contact@170" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -8330 1890 ) ) ) )
+     ( instance ( rename contact_171 "contact@171" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1340 1890 ) ) ) )
+     ( instance ( rename contact_172 "contact@172" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 1980 1890 ) ) ) )
+     ( instance ( rename contact_173 "contact@173" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5420 1890 ) ) ) )
+     ( instance ( rename contact_174 "contact@174" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -4810 110 ) ) ) )
+     ( instance ( rename contact_175 "contact@175" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -8290 110 ) ) ) )
+     ( instance ( rename contact_176 "contact@176" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1300 110 ) ) ) )
+     ( instance ( rename contact_177 "contact@177" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 2020 110 ) ) ) )
+     ( instance ( rename contact_178 "contact@178" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5960 110 ) ) ) )
+     ( instance ( rename contact_179 "contact@179" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -6460 1040 ) ) ) )
+     ( instance ( rename contact_180 "contact@180" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -6460 1040 ) ) ) )
+     ( instance ( rename contact_182 "contact@182" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -5450 570 ) ) ) )
+     ( instance ( rename contact_183 "contact@183" )
+      ( viewRef symbol ( cellRef Metal1Polysilicon1Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -5450 930 ) ) ) )
+     ( instance ( rename contact_184 "contact@184" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 3900 1310 ) ) ) )
+     ( instance ( rename contact_185 "contact@185" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 520 1310 ) ) ) )
+     ( instance ( rename contact_186 "contact@186" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -2860 1310 ) ) ) )
+     ( instance ( rename contact_187 "contact@187" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -2200 840 ) ) ) )
+     ( instance ( rename contact_188 "contact@188" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -2200 360 ) ) ) )
+     ( instance ( rename contact_189 "contact@189" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5440 360 ) ) ) )
+     ( instance ( rename contact_191 "contact@191" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5440 690 ) ) ) )
+     ( instance ( rename contact_192 "contact@192" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 4540 840 ) ) ) )
+     ( instance ( rename contact_193 "contact@193" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 4540 110 ) ) ) )
+     ( instance ( rename contact_194 "contact@194" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -6580 560 ) ) ) )
+     ( instance ( rename contact_198 "contact@198" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -3400 840 ) ) ) )
+     ( instance ( rename contact_199 "contact@199" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -3140 840 ) ) ) )
+     ( instance ( rename contact_200 "contact@200" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 210 710 ) ) ) )
+     ( instance ( rename contact_201 "contact@201" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 440 710 ) ) ) )
+     ( instance ( rename contact_202 "contact@202" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 1410 860 ) ) ) )
+     ( instance ( rename contact_203 "contact@203" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 370 860 ) ) ) )
+     ( instance ( rename contact_206 "contact@206" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 3530 700 ) ) ) )
+     ( instance ( rename contact_207 "contact@207" )
+      ( viewRef symbol ( cellRef Metal1Metal2Con
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 3780 700 ) ) ) )
+     ( instance ( rename nmos_0 "nmos@0" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -1840 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_1 "nmos@1" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -1690 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_2 "nmos@2" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -990 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_3 "nmos@3" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -840 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_4 "nmos@4" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -140 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_5 "nmos@5" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 10 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_6 "nmos@6" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -2560 340 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_7 "nmos@7" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 1480 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_8 "nmos@8" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 1630 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_9 "nmos@9" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 2330 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_10 "nmos@10" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 2480 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_11 "nmos@11" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 3180 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_12 "nmos@12" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 3330 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_13 "nmos@13" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 760 340 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_14 "nmos@14" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -5450 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_15 "nmos@15" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -5300 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_16 "nmos@16" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -4600 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_17 "nmos@17" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -4450 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_18 "nmos@18" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -3750 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_19 "nmos@19" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -3600 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_20 "nmos@20" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -6170 340 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_21 "nmos@21" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 4920 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_22 "nmos@22" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 5070 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_23 "nmos@23" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 5770 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_24 "nmos@24" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 5920 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_25 "nmos@25" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 6620 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_26 "nmos@26" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 6770 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_27 "nmos@27" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 4200 340 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_28 "nmos@28" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -8930 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_29 "nmos@29" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -8780 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_30 "nmos@30" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -8080 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_31 "nmos@31" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -7930 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_32 "nmos@32" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -7230 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_33 "nmos@33" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -7080 380 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename nmos_34 "nmos@34" )
+      ( viewRef symbol ( cellRef NTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -9650 340 ) ) )
+      ( property SIM_spice_model
+       ( string "nmos" ) ) )
+     ( instance ( rename pmos_0 "pmos@0" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -1840 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_1 "pmos@1" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -1630 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_2 "pmos@2" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -990 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_3 "pmos@3" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -780 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_4 "pmos@4" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -140 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_5 "pmos@5" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 70 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_6 "pmos@6" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -2560 1530 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_7 "pmos@7" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 1480 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_8 "pmos@8" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 1690 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_9 "pmos@9" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 2330 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_10 "pmos@10" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 2540 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_11 "pmos@11" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 3180 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_12 "pmos@12" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 3390 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_13 "pmos@13" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 760 1530 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_14 "pmos@14" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -5450 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_15 "pmos@15" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -5240 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_16 "pmos@16" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -4600 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_17 "pmos@17" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -4390 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_18 "pmos@18" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -3750 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_19 "pmos@19" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -3540 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_20 "pmos@20" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -6170 1530 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_21 "pmos@21" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 4920 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_22 "pmos@22" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 5130 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_23 "pmos@23" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 5770 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_24 "pmos@24" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 5980 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_25 "pmos@25" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 6620 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_26 "pmos@26" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 6830 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_27 "pmos@27" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt 4200 1530 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_28 "pmos@28" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -8930 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_29 "pmos@29" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -8720 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_30 "pmos@30" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -8080 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_31 "pmos@31" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -7870 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_32 "pmos@32" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -7230 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_33 "pmos@33" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -7020 1640 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename pmos_34 "pmos@34" )
+      ( viewRef symbol ( cellRef PTransistor
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R90 )
+       ( origin
+        ( pt -9650 1530 ) ) )
+      ( property SIM_spice_model
+       ( string "pmos" ) ) )
+     ( instance ( rename substr_0 "substr@0" )
+      ( viewRef symbol ( cellRef Metal1PWellCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1200 110 ) ) ) )
+     ( instance ( rename substr_1 "substr@1" )
+      ( viewRef symbol ( cellRef Metal1PWellCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 2120 110 ) ) ) )
+     ( instance ( rename substr_2 "substr@2" )
+      ( viewRef symbol ( cellRef Metal1PWellCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -4810 110 ) ) ) )
+     ( instance ( rename substr_3 "substr@3" )
+      ( viewRef symbol ( cellRef Metal1PWellCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5560 110 ) ) ) )
+     ( instance ( rename substr_4 "substr@4" )
+      ( viewRef symbol ( cellRef Metal1PWellCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -8290 110 ) ) ) )
+     ( instance ( rename well_0 "well@0" )
+      ( viewRef symbol ( cellRef Metal1NWellCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -1240 1890 ) ) ) )
+     ( instance ( rename well_1 "well@1" )
+      ( viewRef symbol ( cellRef Metal1NWellCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 2080 1890 ) ) ) )
+     ( instance ( rename well_2 "well@2" )
+      ( viewRef symbol ( cellRef Metal1NWellCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -4850 1890 ) ) ) )
+     ( instance ( rename well_3 "well@3" )
+      ( viewRef symbol ( cellRef Metal1NWellCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt 5520 1890 ) ) ) )
+     ( instance ( rename well_4 "well@4" )
+      ( viewRef symbol ( cellRef Metal1NWellCon
+        ( libraryRef ELECTRIC_PRIMS ) ) )
+      ( transform
+       ( orientation R0 )
+       ( origin
+        ( pt -8330 1890 ) ) ) )
+     ( net GND
+      ( joined
+       ( portRef gnd )
+       ( portRef difftop
+        ( instanceRef nmos_0 ) )
+       ( portRef difftop
+        ( instanceRef nmos_2 ) )
+       ( portRef difftop
+        ( instanceRef nmos_4 ) )
+       ( portRef difftop
+        ( instanceRef nmos_6 ) )
+       ( portRef difftop
+        ( instanceRef nmos_7 ) )
+       ( portRef difftop
+        ( instanceRef nmos_9 ) )
+       ( portRef difftop
+        ( instanceRef nmos_11 ) )
+       ( portRef difftop
+        ( instanceRef nmos_13 ) )
+       ( portRef difftop
+        ( instanceRef nmos_14 ) )
+       ( portRef difftop
+        ( instanceRef nmos_16 ) )
+       ( portRef difftop
+        ( instanceRef nmos_18 ) )
+       ( portRef difftop
+        ( instanceRef nmos_20 ) )
+       ( portRef difftop
+        ( instanceRef nmos_21 ) )
+       ( portRef polyright
+        ( instanceRef nmos_21 ) )
+       ( portRef difftop
+        ( instanceRef nmos_23 ) )
+       ( portRef difftop
+        ( instanceRef nmos_25 ) )
+       ( portRef difftop
+        ( instanceRef nmos_27 ) )
+       ( portRef difftop
+        ( instanceRef nmos_28 ) )
+       ( portRef polyright
+        ( instanceRef nmos_28 ) )
+       ( portRef difftop
+        ( instanceRef nmos_30 ) )
+       ( portRef difftop
+        ( instanceRef nmos_32 ) )
+       ( portRef difftop
+        ( instanceRef nmos_34 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_21 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_28 ) )
+       ( portRef metal1well
+        ( instanceRef substr_0 ) )
+       ( portRef metal1well
+        ( instanceRef substr_0 ) )
+       ( portRef metal1well
+        ( instanceRef substr_0 ) )
+       ( portRef metal1well
+        ( instanceRef substr_0 ) )
+       ( portRef metal1well
+        ( instanceRef substr_0 ) )
+       ( portRef metal1well
+        ( instanceRef substr_1 ) )
+       ( portRef metal1well
+        ( instanceRef substr_1 ) )
+       ( portRef metal1well
+        ( instanceRef substr_1 ) )
+       ( portRef metal1well
+        ( instanceRef substr_1 ) )
+       ( portRef metal1well
+        ( instanceRef substr_1 ) )
+       ( portRef metal1well
+        ( instanceRef substr_2 ) )
+       ( portRef metal1well
+        ( instanceRef substr_2 ) )
+       ( portRef metal1well
+        ( instanceRef substr_2 ) )
+       ( portRef metal1well
+        ( instanceRef substr_2 ) )
+       ( portRef metal1well
+        ( instanceRef substr_2 ) )
+       ( portRef metal1well
+        ( instanceRef substr_3 ) )
+       ( portRef metal1well
+        ( instanceRef substr_3 ) )
+       ( portRef metal1well
+        ( instanceRef substr_3 ) )
+       ( portRef metal1well
+        ( instanceRef substr_3 ) )
+       ( portRef metal1well
+        ( instanceRef substr_3 ) )
+       ( portRef metal1well
+        ( instanceRef substr_4 ) )
+       ( portRef metal1well
+        ( instanceRef substr_4 ) )
+       ( portRef metal1well
+        ( instanceRef substr_4 ) )
+       ( portRef metal1well
+        ( instanceRef substr_4 ) )
+       ( portRef metal1well
+        ( instanceRef substr_4 ) )
+       ( portRef metal1well
+        ( instanceRef substr_4 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -280 330 )
+       ( pt -185 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -400 210 )
+       ( pt -65 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -320 290 )
+       ( pt -145 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -2680 310 )
+       ( pt -2605 370 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -2800 190 )
+       ( pt -2485 490 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -2720 270 )
+       ( pt -2565 410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -2690 70 )
+       ( pt -2610 380 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1140 70 )
+       ( pt -1060 420 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -300 70 )
+       ( pt -220 420 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1990 70 )
+       ( pt -1910 420 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -1980 330 )
+       ( pt -1885 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -2100 210 )
+       ( pt -1765 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -2020 290 )
+       ( pt -1845 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -1130 330 )
+       ( pt -1035 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -1250 210 )
+       ( pt -915 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -1170 290 )
+       ( pt -995 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 3040 330 )
+       ( pt 3135 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 2920 210 )
+       ( pt 3255 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 3000 290 )
+       ( pt 3175 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 640 310 )
+       ( pt 715 370 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 520 190 )
+       ( pt 835 490 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 600 270 )
+       ( pt 755 410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 630 70 )
+       ( pt 710 380 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2180 70 )
+       ( pt 2260 420 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3020 70 )
+       ( pt 3100 420 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1330 70 )
+       ( pt 1410 420 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 1340 330 )
+       ( pt 1435 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 1220 210 )
+       ( pt 1555 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 1300 290 )
+       ( pt 1475 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 2190 330 )
+       ( pt 2285 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 2070 210 )
+       ( pt 2405 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 2150 290 )
+       ( pt 2325 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -3890 330 )
+       ( pt -3795 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -4010 210 )
+       ( pt -3675 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -3930 290 )
+       ( pt -3755 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -6290 310 )
+       ( pt -6215 370 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -6410 190 )
+       ( pt -6095 490 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -6330 270 )
+       ( pt -6175 410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -6300 70 )
+       ( pt -6220 380 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4750 70 )
+       ( pt -4670 420 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3910 70 )
+       ( pt -3830 420 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -5600 70 )
+       ( pt -5520 420 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -5590 330 )
+       ( pt -5495 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -5710 210 )
+       ( pt -5375 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -5630 290 )
+       ( pt -5455 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -4740 330 )
+       ( pt -4645 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -4860 210 )
+       ( pt -4525 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -4780 290 )
+       ( pt -4605 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 6480 330 )
+       ( pt 6575 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 6360 210 )
+       ( pt 6695 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 6440 290 )
+       ( pt 6615 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 4080 310 )
+       ( pt 4155 370 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 3960 190 )
+       ( pt 4275 490 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 4040 270 )
+       ( pt 4195 410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 4070 70 )
+       ( pt 4150 380 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5620 70 )
+       ( pt 5700 420 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6460 70 )
+       ( pt 6540 420 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 4690 810 )
+       ( pt 4880 870 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 4820 800 )
+       ( pt 4880 870 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 4770 70 )
+       ( pt 4850 420 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 4900 810 )
+       ( pt 4940 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 4900 500 )
+       ( pt 4940 850 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 4820 810 )
+       ( pt 4940 850 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 4780 330 )
+       ( pt 4875 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 4660 210 )
+       ( pt 4995 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 4740 290 )
+       ( pt 4915 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 5630 330 )
+       ( pt 5725 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 5510 210 )
+       ( pt 5845 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 5590 290 )
+       ( pt 5765 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -7370 330 )
+       ( pt -7275 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -7490 210 )
+       ( pt -7155 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -7410 290 )
+       ( pt -7235 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -9770 310 )
+       ( pt -9695 370 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -9890 190 )
+       ( pt -9575 490 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -9810 270 )
+       ( pt -9655 410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -9780 70 )
+       ( pt -9700 380 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8230 70 )
+       ( pt -8150 420 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7390 70 )
+       ( pt -7310 420 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -9160 810 )
+       ( pt -8970 870 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -9030 800 )
+       ( pt -8970 870 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -9080 70 )
+       ( pt -9000 420 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -8950 810 )
+       ( pt -8910 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -8950 500 )
+       ( pt -8910 850 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -9030 810 )
+       ( pt -8910 850 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -9070 330 )
+       ( pt -8975 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -9190 210 )
+       ( pt -8855 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -9110 290 )
+       ( pt -8935 430 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -8220 330 )
+       ( pt -8125 390 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -8340 210 )
+       ( pt -8005 510 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -8260 290 )
+       ( pt -8085 430 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -9360 80 )
+       ( pt -9300 870 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -9360 810 )
+       ( pt -9100 870 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -7280 80 )
+       ( pt -6490 140 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -7280 80 )
+       ( pt -6420 140 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -6480 80 )
+       ( pt -4780 140 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4840 80 )
+       ( pt -4780 140 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -8320 80 )
+       ( pt -6490 140 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8320 80 )
+       ( pt -8260 140 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -7280 80 )
+       ( pt -1270 140 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1330 80 )
+       ( pt -1170 140 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -1330 80 )
+       ( pt 2050 140 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1990 80 )
+       ( pt 2150 140 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5530 80 )
+       ( pt 5990 140 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 4510 480 )
+       ( pt 4570 730 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 4510 810 )
+       ( pt 4750 870 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 4510 670 )
+       ( pt 4570 870 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 1990 80 )
+       ( pt 4570 140 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 4510 80 )
+       ( pt 5990 140 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 4510 80 )
+       ( pt 4570 540 ) )
+      ( comment "exported as gnd, type unknown" ) )
+     ( net VDD
+      ( joined
+       ( portRef vdd )
+       ( portRef difftop
+        ( instanceRef pmos_0 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_1 ) )
+       ( portRef difftop
+        ( instanceRef pmos_2 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_3 ) )
+       ( portRef difftop
+        ( instanceRef pmos_4 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_5 ) )
+       ( portRef difftop
+        ( instanceRef pmos_6 ) )
+       ( portRef difftop
+        ( instanceRef pmos_7 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_8 ) )
+       ( portRef difftop
+        ( instanceRef pmos_9 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_10 ) )
+       ( portRef difftop
+        ( instanceRef pmos_11 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_12 ) )
+       ( portRef difftop
+        ( instanceRef pmos_13 ) )
+       ( portRef difftop
+        ( instanceRef pmos_14 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_15 ) )
+       ( portRef difftop
+        ( instanceRef pmos_16 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_17 ) )
+       ( portRef difftop
+        ( instanceRef pmos_18 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_19 ) )
+       ( portRef difftop
+        ( instanceRef pmos_20 ) )
+       ( portRef difftop
+        ( instanceRef pmos_21 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_22 ) )
+       ( portRef difftop
+        ( instanceRef pmos_23 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_24 ) )
+       ( portRef difftop
+        ( instanceRef pmos_25 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_26 ) )
+       ( portRef difftop
+        ( instanceRef pmos_27 ) )
+       ( portRef difftop
+        ( instanceRef pmos_28 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_29 ) )
+       ( portRef difftop
+        ( instanceRef pmos_30 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_31 ) )
+       ( portRef difftop
+        ( instanceRef pmos_32 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_33 ) )
+       ( portRef difftop
+        ( instanceRef pmos_34 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_0 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_0 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_0 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_0 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_0 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_0 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_0 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_0 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_0 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_1 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_1 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_1 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_1 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_1 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_1 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_1 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_1 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_1 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_2 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_2 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_2 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_2 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_2 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_2 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_2 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_2 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_2 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_3 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_3 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_3 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_3 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_3 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_3 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_3 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_3 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_3 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_4 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_4 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_4 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_4 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_4 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_4 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_4 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_4 ) )
+       ( portRef metal1substrate
+        ( instanceRef well_4 ) ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -260 1660 )
+       ( pt -185 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -380 1540 )
+       ( pt -65 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -300 1620 )
+       ( pt -145 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 115 1660 )
+       ( pt 200 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -5 1540 )
+       ( pt 320 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 75 1620 )
+       ( pt 240 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -2680 1500 )
+       ( pt -2605 1560 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -2800 1380 )
+       ( pt -2485 1680 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -2720 1460 )
+       ( pt -2565 1600 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -2690 1490 )
+       ( pt -2610 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1970 1600 )
+       ( pt -1890 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1580 1600 )
+       ( pt -1500 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1120 1600 )
+       ( pt -1040 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -730 1600 )
+       ( pt -650 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -270 1600 )
+       ( pt -190 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 120 1600 )
+       ( pt 200 1930 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -1960 1660 )
+       ( pt -1885 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -2080 1540 )
+       ( pt -1765 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -2000 1620 )
+       ( pt -1845 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -1585 1660 )
+       ( pt -1500 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -1705 1540 )
+       ( pt -1380 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -1625 1620 )
+       ( pt -1460 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -1110 1660 )
+       ( pt -1035 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -1230 1540 )
+       ( pt -915 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -1150 1620 )
+       ( pt -995 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -950 1850 )
+       ( pt -650 1930 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -735 1660 )
+       ( pt -650 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -855 1540 )
+       ( pt -530 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -775 1620 )
+       ( pt -610 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 3060 1660 )
+       ( pt 3135 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 2940 1540 )
+       ( pt 3255 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 3020 1620 )
+       ( pt 3175 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 3435 1660 )
+       ( pt 3520 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 3315 1540 )
+       ( pt 3640 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 3395 1620 )
+       ( pt 3560 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 640 1500 )
+       ( pt 715 1560 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 520 1380 )
+       ( pt 835 1680 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 600 1460 )
+       ( pt 755 1600 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 630 1490 )
+       ( pt 710 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1350 1600 )
+       ( pt 1430 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1740 1600 )
+       ( pt 1820 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2200 1600 )
+       ( pt 2280 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2590 1600 )
+       ( pt 2670 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3050 1600 )
+       ( pt 3130 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3440 1600 )
+       ( pt 3520 1930 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 1360 1660 )
+       ( pt 1435 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 1240 1540 )
+       ( pt 1555 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 1320 1620 )
+       ( pt 1475 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 1735 1660 )
+       ( pt 1820 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 1615 1540 )
+       ( pt 1940 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 1695 1620 )
+       ( pt 1860 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 2210 1660 )
+       ( pt 2285 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 2090 1540 )
+       ( pt 2405 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 2170 1620 )
+       ( pt 2325 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2370 1850 )
+       ( pt 2670 1930 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 2585 1660 )
+       ( pt 2670 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 2465 1540 )
+       ( pt 2790 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 2545 1620 )
+       ( pt 2710 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -3870 1660 )
+       ( pt -3795 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -3990 1540 )
+       ( pt -3675 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -3910 1620 )
+       ( pt -3755 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -3495 1660 )
+       ( pt -3410 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -3615 1540 )
+       ( pt -3290 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -3535 1620 )
+       ( pt -3370 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -6290 1500 )
+       ( pt -6215 1560 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -6410 1380 )
+       ( pt -6095 1680 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -6330 1460 )
+       ( pt -6175 1600 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -6300 1490 )
+       ( pt -6220 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -5580 1600 )
+       ( pt -5500 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -5190 1600 )
+       ( pt -5110 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4730 1600 )
+       ( pt -4650 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4340 1600 )
+       ( pt -4260 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3880 1600 )
+       ( pt -3800 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3490 1600 )
+       ( pt -3410 1930 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -5570 1660 )
+       ( pt -5495 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -5690 1540 )
+       ( pt -5375 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -5610 1620 )
+       ( pt -5455 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -5195 1660 )
+       ( pt -5110 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -5315 1540 )
+       ( pt -4990 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -5235 1620 )
+       ( pt -5070 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -4720 1660 )
+       ( pt -4645 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -4840 1540 )
+       ( pt -4525 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -4760 1620 )
+       ( pt -4605 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4560 1850 )
+       ( pt -4260 1930 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -4345 1660 )
+       ( pt -4260 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -4465 1540 )
+       ( pt -4140 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -4385 1620 )
+       ( pt -4220 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 6500 1660 )
+       ( pt 6575 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 6380 1540 )
+       ( pt 6695 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 6460 1620 )
+       ( pt 6615 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 6875 1660 )
+       ( pt 6960 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 6755 1540 )
+       ( pt 7080 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 6835 1620 )
+       ( pt 7000 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 4080 1500 )
+       ( pt 4155 1560 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 3960 1380 )
+       ( pt 4275 1680 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 4040 1460 )
+       ( pt 4195 1600 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 4070 1490 )
+       ( pt 4150 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 4790 1600 )
+       ( pt 4870 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5180 1600 )
+       ( pt 5260 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5640 1600 )
+       ( pt 5720 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6030 1600 )
+       ( pt 6110 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6490 1600 )
+       ( pt 6570 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6880 1600 )
+       ( pt 6960 1930 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 4800 1660 )
+       ( pt 4875 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 4680 1540 )
+       ( pt 4995 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 4760 1620 )
+       ( pt 4915 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 5175 1660 )
+       ( pt 5260 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 5055 1540 )
+       ( pt 5380 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 5135 1620 )
+       ( pt 5300 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 5650 1660 )
+       ( pt 5725 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 5530 1540 )
+       ( pt 5845 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 5610 1620 )
+       ( pt 5765 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5810 1850 )
+       ( pt 6110 1930 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 6025 1660 )
+       ( pt 6110 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 5905 1540 )
+       ( pt 6230 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 5985 1620 )
+       ( pt 6150 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -7350 1660 )
+       ( pt -7275 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -7470 1540 )
+       ( pt -7155 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -7390 1620 )
+       ( pt -7235 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -6975 1660 )
+       ( pt -6890 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -7095 1540 )
+       ( pt -6770 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -7015 1620 )
+       ( pt -6850 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -9770 1500 )
+       ( pt -9695 1560 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -9890 1380 )
+       ( pt -9575 1680 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -9810 1460 )
+       ( pt -9655 1600 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -9780 1490 )
+       ( pt -9700 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -9060 1600 )
+       ( pt -8980 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8670 1600 )
+       ( pt -8590 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8210 1600 )
+       ( pt -8130 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7820 1600 )
+       ( pt -7740 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7360 1600 )
+       ( pt -7280 1930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -6970 1600 )
+       ( pt -6890 1930 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -9050 1660 )
+       ( pt -8975 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -9170 1540 )
+       ( pt -8855 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -9090 1620 )
+       ( pt -8935 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -8675 1660 )
+       ( pt -8590 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -8795 1540 )
+       ( pt -8470 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -8715 1620 )
+       ( pt -8550 1760 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -8200 1660 )
+       ( pt -8125 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -8320 1540 )
+       ( pt -8005 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -8240 1620 )
+       ( pt -8085 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8040 1850 )
+       ( pt -7740 1930 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -7825 1660 )
+       ( pt -7740 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -7945 1540 )
+       ( pt -7620 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -7865 1620 )
+       ( pt -7700 1760 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -7560 1860 )
+       ( pt -6550 1920 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -6610 1860 )
+       ( pt -5520 1920 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -5580 1860 )
+       ( pt -4820 1920 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -8360 1860 )
+       ( pt -6550 1920 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8360 1860 )
+       ( pt -8300 1920 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -5580 1860 )
+       ( pt -1310 1920 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1370 1860 )
+       ( pt -1210 1920 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -1370 1860 )
+       ( pt 2010 1920 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1950 1860 )
+       ( pt 2110 1920 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 1950 1860 )
+       ( pt 5450 1920 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5390 1860 )
+       ( pt 5550 1920 ) )
+      ( comment "exported as vdd, type unknown" ) )
+     ( net a0
+      ( joined
+       ( portRef a0 )
+       ( portRef polyright
+        ( instanceRef nmos_7 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_7 ) ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1380 820 )
+       ( pt 1440 880 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 1460 830 )
+       ( pt 1500 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 1460 500 )
+       ( pt 1500 870 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 1380 830 )
+       ( pt 1500 870 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 1120 830 )
+       ( pt 1440 890 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1380 820 )
+       ( pt 1440 890 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 350 830 )
+       ( pt 1180 890 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 340 830 )
+       ( pt 410 890 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 340 820 )
+       ( pt 400 1010 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 340 950 )
+       ( pt 400 2080 ) )
+      ( comment "exported as a0, type unknown" ) )
+     ( net a1
+      ( joined
+       ( portRef a1 )
+       ( portRef polyright
+        ( instanceRef nmos_0 ) )
+       ( portRef polyright
+        ( instanceRef nmos_23 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_0 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_23 ) ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -2070 810 )
+       ( pt -1880 870 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1940 800 )
+       ( pt -1880 870 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -1860 810 )
+       ( pt -1820 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -1860 500 )
+       ( pt -1820 850 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -1940 810 )
+       ( pt -1820 850 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 5660 660 )
+       ( pt 5720 730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5650 660 )
+       ( pt 5740 740 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 5750 670 )
+       ( pt 5790 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 5750 500 )
+       ( pt 5790 710 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 5670 670 )
+       ( pt 5790 710 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -2240 810 )
+       ( pt -2010 870 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -50 330 )
+       ( pt 410 390 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -2230 330 )
+       ( pt -2170 870 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -2240 330 )
+       ( pt 410 390 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -50 330 )
+       ( pt 3110 390 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 3050 330 )
+       ( pt 4980 390 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5410 330 )
+       ( pt 5470 520 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 4920 330 )
+       ( pt 5470 390 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 5500 660 )
+       ( pt 5720 720 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5410 460 )
+       ( pt 5470 720 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 5410 660 )
+       ( pt 5560 720 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 5500 660 )
+       ( pt 7130 720 ) )
+      ( comment "exported as a1, type unknown" ) )
+     ( net a2
+      ( joined
+       ( portRef a2 )
+       ( portRef polyright
+        ( instanceRef nmos_9 ) )
+       ( portRef polyright
+        ( instanceRef nmos_14 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_9 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_14 ) ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 420 530 )
+       ( pt 2280 590 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 2220 530 )
+       ( pt 2280 630 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2210 560 )
+       ( pt 2300 640 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 2310 580 )
+       ( pt 2350 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 2310 500 )
+       ( pt 2350 620 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 2230 580 )
+       ( pt 2350 620 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 370 530 )
+       ( pt 500 590 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -5480 530 )
+       ( pt 500 590 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -5490 540 )
+       ( pt -5410 960 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -5470 900 )
+       ( pt -5430 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -5470 500 )
+       ( pt -5430 940 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -5490 880 )
+       ( pt -5410 960 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 420 530 )
+       ( pt 500 590 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 420 530 )
+       ( pt 480 590 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -6610 530 )
+       ( pt -5420 590 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -6610 350 )
+       ( pt -6550 590 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -6610 20 )
+       ( pt -6550 410 ) )
+      ( comment "exported as a2, type unknown" ) )
+     ( net a3
+      ( joined
+       ( portRef a3 )
+       ( portRef polyright
+        ( instanceRef nmos_2 ) )
+       ( portRef polyright
+        ( instanceRef nmos_30 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_2 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_30 ) ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -2900 680 )
+       ( pt -1040 740 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -1100 670 )
+       ( pt -1040 740 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1110 660 )
+       ( pt -1020 740 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -1010 670 )
+       ( pt -970 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -1010 500 )
+       ( pt -970 710 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -1090 670 )
+       ( pt -970 710 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -8190 670 )
+       ( pt -8130 740 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8200 660 )
+       ( pt -8110 740 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -8100 670 )
+       ( pt -8060 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -8100 500 )
+       ( pt -8060 710 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -8180 670 )
+       ( pt -8060 710 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -5930 680 )
+       ( pt -2840 740 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -8190 680 )
+       ( pt -5870 740 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -9950 680 )
+       ( pt -8130 740 ) )
+      ( comment "exported as a3, type unknown" ) )
+     ( net h0
+      ( joined
+       ( portRef h0 )
+       ( portRef diffbottom
+        ( instanceRef nmos_26 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_25 ) )
+       ( portRef difftop
+        ( instanceRef pmos_26 ) ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 6665 1660 )
+       ( pt 6770 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 6545 1540 )
+       ( pt 6890 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 6625 1620 )
+       ( pt 6810 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6690 1330 )
+       ( pt 6900 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6690 1330 )
+       ( pt 6770 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6820 340 )
+       ( pt 6900 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 6710 1660 )
+       ( pt 6785 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 6590 1540 )
+       ( pt 6905 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 6670 1620 )
+       ( pt 6825 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6820 420 )
+       ( pt 7010 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6820 1330 )
+       ( pt 7010 1410 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 6815 350 )
+       ( pt 6890 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 6695 230 )
+       ( pt 7010 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 6775 310 )
+       ( pt 6930 450 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6930 420 )
+       ( pt 7010 1170 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6930 1090 )
+       ( pt 7010 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6930 1090 )
+       ( pt 7090 1170 ) )
+      ( comment "exported as h0, type unknown" ) )
+     ( net h1
+      ( joined
+       ( portRef h1 )
+       ( portRef diffbottom
+        ( instanceRef nmos_12 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_11 ) )
+       ( portRef difftop
+        ( instanceRef pmos_12 ) ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 3225 1660 )
+       ( pt 3330 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 3105 1540 )
+       ( pt 3450 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 3185 1620 )
+       ( pt 3370 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3250 1330 )
+       ( pt 3460 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3250 1330 )
+       ( pt 3330 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3380 340 )
+       ( pt 3460 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 3270 1660 )
+       ( pt 3345 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 3150 1540 )
+       ( pt 3465 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 3230 1620 )
+       ( pt 3385 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3380 420 )
+       ( pt 3570 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3380 1330 )
+       ( pt 3570 1410 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 3375 350 )
+       ( pt 3450 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 3255 230 )
+       ( pt 3570 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 3335 310 )
+       ( pt 3490 450 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 3620 670 )
+       ( pt 3810 730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3490 420 )
+       ( pt 3570 740 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3490 660 )
+       ( pt 3570 1410 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 3500 670 )
+       ( pt 3680 730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3750 460 )
+       ( pt 3810 590 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3750 530 )
+       ( pt 3810 730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3750 0 )
+       ( pt 3810 520 ) )
+      ( comment "exported as h1, type unknown" ) )
+     ( net h2
+      ( joined
+       ( portRef h2 )
+       ( portRef diffbottom
+        ( instanceRef nmos_5 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_4 ) )
+       ( portRef difftop
+        ( instanceRef pmos_5 ) ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -95 1660 )
+       ( pt 10 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -215 1540 )
+       ( pt 130 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -135 1620 )
+       ( pt 50 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -70 1330 )
+       ( pt 140 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -70 1330 )
+       ( pt 10 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 60 340 )
+       ( pt 140 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -50 1660 )
+       ( pt 25 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -170 1540 )
+       ( pt 145 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -90 1620 )
+       ( pt 65 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 60 420 )
+       ( pt 250 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 60 1330 )
+       ( pt 250 1410 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 55 350 )
+       ( pt 130 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -65 230 )
+       ( pt 250 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 15 310 )
+       ( pt 170 450 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 170 420 )
+       ( pt 250 750 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 170 670 )
+       ( pt 250 1410 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 180 680 )
+       ( pt 470 740 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 410 10 )
+       ( pt 470 630 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 410 570 )
+       ( pt 470 740 ) )
+      ( comment "exported as h2, type unknown" ) )
+     ( net h3
+      ( joined
+       ( portRef h3 )
+       ( portRef diffbottom
+        ( instanceRef nmos_19 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_18 ) )
+       ( portRef difftop
+        ( instanceRef pmos_19 ) ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -3705 1660 )
+       ( pt -3600 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -3825 1540 )
+       ( pt -3480 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -3745 1620 )
+       ( pt -3560 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3680 1330 )
+       ( pt -3470 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3680 1330 )
+       ( pt -3600 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3550 340 )
+       ( pt -3470 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -3660 1660 )
+       ( pt -3585 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -3780 1540 )
+       ( pt -3465 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -3700 1620 )
+       ( pt -3545 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3550 420 )
+       ( pt -3360 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3550 1330 )
+       ( pt -3360 1410 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -3555 350 )
+       ( pt -3480 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -3675 230 )
+       ( pt -3360 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -3595 310 )
+       ( pt -3440 450 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3440 420 )
+       ( pt -3360 880 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3440 800 )
+       ( pt -3360 1410 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -3430 810 )
+       ( pt -3110 870 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3170 -90 )
+       ( pt -3110 870 ) )
+      ( comment "exported as h3, type unknown" ) )
+     ( net s2LR
+      ( joined
+       ( portRef s2LR )
+       ( portRef polyright
+        ( instanceRef nmos_3 ) )
+       ( portRef polyright
+        ( instanceRef nmos_6 ) )
+       ( portRef polyright
+        ( instanceRef nmos_10 ) )
+       ( portRef polyright
+        ( instanceRef nmos_13 ) )
+       ( portRef polyright
+        ( instanceRef nmos_17 ) )
+       ( portRef polyright
+        ( instanceRef nmos_20 ) )
+       ( portRef polyright
+        ( instanceRef nmos_24 ) )
+       ( portRef polyright
+        ( instanceRef nmos_27 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_3 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_6 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_10 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_13 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_17 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_20 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_24 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_27 ) ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -2580 460 )
+       ( pt -2540 500 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -2580 1070 )
+       ( pt -2540 1310 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -2580 460 )
+       ( pt -2540 1110 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -2770 1070 )
+       ( pt -2540 1110 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -1200 980 )
+       ( pt -810 1040 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -870 980 )
+       ( pt -810 1040 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -2780 980 )
+       ( pt -1140 1040 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -2790 970 )
+       ( pt -2710 1130 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -2900 1050 )
+       ( pt -2710 1130 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -800 990 )
+       ( pt -760 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -800 500 )
+       ( pt -760 1030 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -860 990 )
+       ( pt -760 1030 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -860 500 )
+       ( pt -760 540 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 740 460 )
+       ( pt 780 500 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 740 1070 )
+       ( pt 780 1310 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 740 460 )
+       ( pt 780 1110 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 550 1070 )
+       ( pt 780 1110 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 2120 980 )
+       ( pt 2510 1040 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2450 980 )
+       ( pt 2510 1040 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 540 980 )
+       ( pt 2180 1040 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 530 970 )
+       ( pt 610 1130 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 480 1050 )
+       ( pt 610 1130 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 2520 990 )
+       ( pt 2560 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 2520 500 )
+       ( pt 2560 1030 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 2460 990 )
+       ( pt 2560 1030 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 2460 500 )
+       ( pt 2560 540 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -6190 460 )
+       ( pt -6150 500 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -4810 1010 )
+       ( pt -4420 1070 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4480 990 )
+       ( pt -4420 1070 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -4410 1020 )
+       ( pt -4370 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -4410 500 )
+       ( pt -4370 1060 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -4470 1020 )
+       ( pt -4370 1060 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -4470 500 )
+       ( pt -4370 540 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 4180 460 )
+       ( pt 4220 500 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 4180 1070 )
+       ( pt 4220 1310 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 4180 460 )
+       ( pt 4220 1110 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 3990 1070 )
+       ( pt 4220 1110 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 5560 980 )
+       ( pt 5950 1040 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5890 980 )
+       ( pt 5950 1040 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 3980 980 )
+       ( pt 5620 1040 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3970 970 )
+       ( pt 4050 1130 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3860 1050 )
+       ( pt 4050 1130 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 5960 990 )
+       ( pt 6000 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 5960 500 )
+       ( pt 6000 1030 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 5900 990 )
+       ( pt 6000 1030 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 5900 500 )
+       ( pt 6000 540 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -10050 1290 )
+       ( pt -6710 1350 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -6770 1290 )
+       ( pt -6640 1350 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -6710 1000 )
+       ( pt -6630 1360 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -6190 1030 )
+       ( pt -6150 1310 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -6190 460 )
+       ( pt -6150 1070 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -6420 1030 )
+       ( pt -6150 1070 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -6490 1010 )
+       ( pt -4750 1070 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -6490 1000 )
+       ( pt -6430 1070 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -6490 1000 )
+       ( pt -6430 1080 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -6480 1030 )
+       ( pt -6380 1070 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -6700 1000 )
+       ( pt -6430 1060 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -6700 1290 )
+       ( pt -3190 1350 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -6710 1280 )
+       ( pt -6630 1360 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3860 1050 )
+       ( pt 3940 1300 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 3770 1290 )
+       ( pt 3930 1350 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3860 1220 )
+       ( pt 3940 1340 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 470 1290 )
+       ( pt 830 1350 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 470 1290 )
+       ( pt 3830 1350 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 480 1050 )
+       ( pt 560 1340 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -3250 1290 )
+       ( pt -2830 1350 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -2890 1290 )
+       ( pt 830 1350 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -2900 1050 )
+       ( pt -2820 1330 ) )
+      ( comment "exported as s2LR, type unknown" ) )
+     ( net s3AL
+      ( joined
+       ( portRef s3AL )
+       ( portRef polyright
+        ( instanceRef nmos_31 ) )
+       ( portRef polyright
+        ( instanceRef nmos_34 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_31 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_34 ) ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -9670 460 )
+       ( pt -9630 500 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -9670 1070 )
+       ( pt -9630 1310 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -9670 460 )
+       ( pt -9630 1110 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -9860 1070 )
+       ( pt -9630 1110 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -8290 980 )
+       ( pt -7900 1040 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7960 980 )
+       ( pt -7900 1040 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -9870 980 )
+       ( pt -8230 1040 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -9880 970 )
+       ( pt -9800 1130 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -9990 1050 )
+       ( pt -9800 1130 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -7890 990 )
+       ( pt -7850 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -7890 500 )
+       ( pt -7850 1030 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -7950 990 )
+       ( pt -7850 1030 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -7950 500 )
+       ( pt -7850 540 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -10200 1050 )
+       ( pt -9910 1130 ) )
+      ( comment "exported as s3AL, type unknown" ) )
+     ( net
+      ( rename net102 "net@102" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_2 ) )
+       ( portRef difftop
+        ( instanceRef nmos_3 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -945 360 )
+       ( pt -885 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -1065 240 )
+       ( pt -765 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -985 320 )
+       ( pt -845 460 ) ) )
+     ( net
+      ( rename net111 "net@111" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_8 ) )
+       ( portRef polyright
+        ( instanceRef nmos_12 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_7 ) )
+       ( portRef difftop
+        ( instanceRef pmos_8 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_12 ) ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 3370 1170 )
+       ( pt 3410 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 3370 500 )
+       ( pt 3410 1210 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 3310 1170 )
+       ( pt 3410 1210 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 3310 500 )
+       ( pt 3410 540 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 2040 1140 )
+       ( pt 3360 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3280 1140 )
+       ( pt 3370 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1790 420 )
+       ( pt 1870 1200 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1790 1120 )
+       ( pt 1870 1410 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 1790 1140 )
+       ( pt 2120 1220 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 3280 1140 )
+       ( pt 3360 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3280 1140 )
+       ( pt 3370 1220 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 1525 1660 )
+       ( pt 1630 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 1405 1540 )
+       ( pt 1750 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 1485 1620 )
+       ( pt 1670 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1550 1330 )
+       ( pt 1760 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1550 1330 )
+       ( pt 1630 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1680 340 )
+       ( pt 1760 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 1570 1660 )
+       ( pt 1645 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 1450 1540 )
+       ( pt 1765 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 1530 1620 )
+       ( pt 1685 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1680 420 )
+       ( pt 1870 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 1680 1330 )
+       ( pt 1870 1410 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 1675 350 )
+       ( pt 1750 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 1555 230 )
+       ( pt 1870 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 1635 310 )
+       ( pt 1790 450 ) ) )
+     ( net
+      ( rename net114 "net@114" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_10 ) )
+       ( portRef polyright
+        ( instanceRef nmos_11 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_9 ) )
+       ( portRef difftop
+        ( instanceRef pmos_10 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_11 ) ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 3160 860 )
+       ( pt 3200 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 3160 500 )
+       ( pt 3200 900 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 3080 860 )
+       ( pt 3200 900 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 3070 840 )
+       ( pt 3150 930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2780 840 )
+       ( pt 3150 920 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 2375 1660 )
+       ( pt 2480 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 2255 1540 )
+       ( pt 2600 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 2335 1620 )
+       ( pt 2520 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2400 1330 )
+       ( pt 2610 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2400 1330 )
+       ( pt 2480 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2530 340 )
+       ( pt 2610 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 2420 1660 )
+       ( pt 2495 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 2300 1540 )
+       ( pt 2615 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 2380 1620 )
+       ( pt 2535 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2530 420 )
+       ( pt 2720 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2530 1330 )
+       ( pt 2720 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2640 420 )
+       ( pt 2720 920 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2640 840 )
+       ( pt 2720 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 2640 840 )
+       ( pt 2860 920 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 2525 350 )
+       ( pt 2600 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 2405 230 )
+       ( pt 2720 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 2485 310 )
+       ( pt 2640 450 ) ) )
+     ( net
+      ( rename net124 "net@124" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_11 ) )
+       ( portRef difftop
+        ( instanceRef nmos_12 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 3225 360 )
+       ( pt 3285 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 3105 240 )
+       ( pt 3405 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 3185 320 )
+       ( pt 3325 460 ) ) )
+     ( net
+      ( rename net129 "net@129" )
+      ( joined
+       ( portRef polyright
+        ( instanceRef nmos_8 ) )
+       ( portRef diffbottom
+        ( instanceRef nmos_13 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_8 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_13 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 805 310 )
+       ( pt 880 370 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 685 190 )
+       ( pt 1000 490 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 765 270 )
+       ( pt 920 410 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 805 1500 )
+       ( pt 880 1560 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 685 1380 )
+       ( pt 1000 1680 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 765 1460 )
+       ( pt 920 1600 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 810 1110 )
+       ( pt 890 1570 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 810 1110 )
+       ( pt 1670 1190 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 810 300 )
+       ( pt 890 1190 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 1670 1120 )
+       ( pt 1710 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 1670 500 )
+       ( pt 1710 1160 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 1610 1120 )
+       ( pt 1710 1160 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 1610 500 )
+       ( pt 1710 540 ) ) )
+     ( net
+      ( rename net18 "net@18" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_4 ) )
+       ( portRef difftop
+        ( instanceRef nmos_5 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -95 360 )
+       ( pt -35 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -215 240 )
+       ( pt 85 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -135 320 )
+       ( pt 5 460 ) ) )
+     ( net
+      ( rename net185 "net@185" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_7 ) )
+       ( portRef difftop
+        ( instanceRef nmos_8 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 1525 360 )
+       ( pt 1585 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 1405 240 )
+       ( pt 1705 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 1485 320 )
+       ( pt 1625 460 ) ) )
+     ( net
+      ( rename net208 "net@208" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_9 ) )
+       ( portRef difftop
+        ( instanceRef nmos_10 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 2375 360 )
+       ( pt 2435 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 2255 240 )
+       ( pt 2555 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 2335 320 )
+       ( pt 2475 460 ) ) )
+     ( net
+      ( rename net217 "net@217" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_15 ) )
+       ( portRef polyright
+        ( instanceRef nmos_19 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_14 ) )
+       ( portRef difftop
+        ( instanceRef pmos_15 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_19 ) ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -3560 1170 )
+       ( pt -3520 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -3560 500 )
+       ( pt -3520 1210 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -3620 1170 )
+       ( pt -3520 1210 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -3620 500 )
+       ( pt -3520 540 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -4890 1140 )
+       ( pt -3570 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3650 1140 )
+       ( pt -3560 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -5140 420 )
+       ( pt -5060 1200 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -5140 1120 )
+       ( pt -5060 1410 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -5140 1140 )
+       ( pt -4810 1220 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -3650 1140 )
+       ( pt -3570 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3650 1140 )
+       ( pt -3560 1220 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -5405 1660 )
+       ( pt -5300 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -5525 1540 )
+       ( pt -5180 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -5445 1620 )
+       ( pt -5260 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -5380 1330 )
+       ( pt -5170 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -5380 1330 )
+       ( pt -5300 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -5250 340 )
+       ( pt -5170 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -5360 1660 )
+       ( pt -5285 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -5480 1540 )
+       ( pt -5165 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -5400 1620 )
+       ( pt -5245 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -5250 420 )
+       ( pt -5060 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -5250 1330 )
+       ( pt -5060 1410 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -5255 350 )
+       ( pt -5180 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -5375 230 )
+       ( pt -5060 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -5295 310 )
+       ( pt -5140 450 ) ) )
+     ( net
+      ( rename net220 "net@220" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_17 ) )
+       ( portRef polyright
+        ( instanceRef nmos_18 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_16 ) )
+       ( portRef difftop
+        ( instanceRef pmos_17 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_18 ) ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -3770 860 )
+       ( pt -3730 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -3770 500 )
+       ( pt -3730 900 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -3850 860 )
+       ( pt -3730 900 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -3860 840 )
+       ( pt -3780 930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4150 840 )
+       ( pt -3780 920 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -4555 1660 )
+       ( pt -4450 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -4675 1540 )
+       ( pt -4330 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -4595 1620 )
+       ( pt -4410 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4530 1330 )
+       ( pt -4320 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4530 1330 )
+       ( pt -4450 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4400 340 )
+       ( pt -4320 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -4510 1660 )
+       ( pt -4435 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -4630 1540 )
+       ( pt -4315 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -4550 1620 )
+       ( pt -4395 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4400 420 )
+       ( pt -4210 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4400 1330 )
+       ( pt -4210 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4290 420 )
+       ( pt -4210 920 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4290 840 )
+       ( pt -4210 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4290 840 )
+       ( pt -4070 920 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -4405 350 )
+       ( pt -4330 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -4525 230 )
+       ( pt -4210 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -4445 310 )
+       ( pt -4290 450 ) ) )
+     ( net
+      ( rename net23 "net@23" )
+      ( joined
+       ( portRef polyright
+        ( instanceRef nmos_1 ) )
+       ( portRef diffbottom
+        ( instanceRef nmos_6 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_1 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_6 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -2515 310 )
+       ( pt -2440 370 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -2635 190 )
+       ( pt -2320 490 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -2555 270 )
+       ( pt -2400 410 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -2515 1500 )
+       ( pt -2440 1560 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -2635 1380 )
+       ( pt -2320 1680 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -2555 1460 )
+       ( pt -2400 1600 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -2510 1110 )
+       ( pt -2430 1570 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -2510 1110 )
+       ( pt -1650 1190 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -2510 300 )
+       ( pt -2430 1190 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -1650 1120 )
+       ( pt -1610 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -1650 500 )
+       ( pt -1610 1160 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -1710 1120 )
+       ( pt -1610 1160 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -1710 500 )
+       ( pt -1610 540 ) ) )
+     ( net
+      ( rename net230 "net@230" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_18 ) )
+       ( portRef difftop
+        ( instanceRef nmos_19 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -3705 360 )
+       ( pt -3645 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -3825 240 )
+       ( pt -3525 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -3745 320 )
+       ( pt -3605 460 ) ) )
+     ( net
+      ( rename net235 "net@235" )
+      ( joined
+       ( portRef polyright
+        ( instanceRef nmos_15 ) )
+       ( portRef diffbottom
+        ( instanceRef nmos_20 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_15 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_20 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -6125 310 )
+       ( pt -6050 370 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -6245 190 )
+       ( pt -5930 490 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -6165 270 )
+       ( pt -6010 410 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -6125 1500 )
+       ( pt -6050 1560 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -6245 1380 )
+       ( pt -5930 1680 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -6165 1460 )
+       ( pt -6010 1600 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -6120 1110 )
+       ( pt -6040 1570 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -6120 1110 )
+       ( pt -5260 1190 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -6120 300 )
+       ( pt -6040 1190 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -5260 1120 )
+       ( pt -5220 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -5260 500 )
+       ( pt -5220 1160 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -5320 1120 )
+       ( pt -5220 1160 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -5320 500 )
+       ( pt -5220 540 ) ) )
+     ( net
+      ( rename net259 "net@259" )
+      ( joined
+       ( portRef polyright
+        ( instanceRef nmos_16 ) )
+       ( portRef diffbottom
+        ( instanceRef nmos_33 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_16 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_32 ) )
+       ( portRef difftop
+        ( instanceRef pmos_33 ) ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -6410 810 )
+       ( pt -4580 870 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -4640 800 )
+       ( pt -4580 870 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -4650 800 )
+       ( pt -4560 880 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -4620 820 )
+       ( pt -4580 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -4620 500 )
+       ( pt -4580 860 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -4620 820 )
+       ( pt -4570 860 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -7185 1660 )
+       ( pt -7080 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -7305 1540 )
+       ( pt -6960 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -7225 1620 )
+       ( pt -7040 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7160 1330 )
+       ( pt -6950 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7160 1330 )
+       ( pt -7080 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7030 340 )
+       ( pt -6950 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -7140 1660 )
+       ( pt -7065 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -7260 1540 )
+       ( pt -6945 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -7180 1620 )
+       ( pt -7025 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7030 420 )
+       ( pt -6840 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7030 1330 )
+       ( pt -6840 1410 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -7035 350 )
+       ( pt -6960 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -7155 230 )
+       ( pt -6840 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -7075 310 )
+       ( pt -6920 450 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -6920 420 )
+       ( pt -6840 880 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -6910 810 )
+       ( pt -6350 870 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -6920 800 )
+       ( pt -6840 1410 ) ) )
+     ( net
+      ( rename net291 "net@291" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_14 ) )
+       ( portRef difftop
+        ( instanceRef nmos_15 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -5405 360 )
+       ( pt -5345 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -5525 240 )
+       ( pt -5225 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -5445 320 )
+       ( pt -5305 460 ) ) )
+     ( net
+      ( rename net314 "net@314" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_16 ) )
+       ( portRef difftop
+        ( instanceRef nmos_17 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -4555 360 )
+       ( pt -4495 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -4675 240 )
+       ( pt -4375 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -4595 320 )
+       ( pt -4455 460 ) ) )
+     ( net
+      ( rename net323 "net@323" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_22 ) )
+       ( portRef polyright
+        ( instanceRef nmos_26 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_21 ) )
+       ( portRef difftop
+        ( instanceRef pmos_22 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_26 ) ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 6810 1170 )
+       ( pt 6850 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 6810 500 )
+       ( pt 6850 1210 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 6750 1170 )
+       ( pt 6850 1210 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 6750 500 )
+       ( pt 6850 540 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 5480 1140 )
+       ( pt 6800 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6720 1140 )
+       ( pt 6810 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5230 420 )
+       ( pt 5310 1200 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5230 1120 )
+       ( pt 5310 1410 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 5230 1140 )
+       ( pt 5560 1220 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt 6720 1140 )
+       ( pt 6800 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6720 1140 )
+       ( pt 6810 1220 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 4965 1660 )
+       ( pt 5070 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 4845 1540 )
+       ( pt 5190 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 4925 1620 )
+       ( pt 5110 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 4990 1330 )
+       ( pt 5200 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 4990 1330 )
+       ( pt 5070 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5120 340 )
+       ( pt 5200 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 5010 1660 )
+       ( pt 5085 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 4890 1540 )
+       ( pt 5205 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 4970 1620 )
+       ( pt 5125 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5120 420 )
+       ( pt 5310 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5120 1330 )
+       ( pt 5310 1410 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 5115 350 )
+       ( pt 5190 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 4995 230 )
+       ( pt 5310 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 5075 310 )
+       ( pt 5230 450 ) ) )
+     ( net
+      ( rename net326 "net@326" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_24 ) )
+       ( portRef polyright
+        ( instanceRef nmos_25 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_23 ) )
+       ( portRef difftop
+        ( instanceRef pmos_24 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_25 ) ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 6600 860 )
+       ( pt 6640 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 6600 500 )
+       ( pt 6640 900 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 6520 860 )
+       ( pt 6640 900 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6510 840 )
+       ( pt 6590 930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6220 840 )
+       ( pt 6590 920 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 5815 1660 )
+       ( pt 5920 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 5695 1540 )
+       ( pt 6040 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 5775 1620 )
+       ( pt 5960 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5840 1330 )
+       ( pt 6050 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5840 1330 )
+       ( pt 5920 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5970 340 )
+       ( pt 6050 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 5860 1660 )
+       ( pt 5935 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 5740 1540 )
+       ( pt 6055 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 5820 1620 )
+       ( pt 5975 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5970 420 )
+       ( pt 6160 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 5970 1330 )
+       ( pt 6160 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6080 420 )
+       ( pt 6160 920 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6080 840 )
+       ( pt 6160 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 6080 840 )
+       ( pt 6300 920 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 5965 350 )
+       ( pt 6040 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 5845 230 )
+       ( pt 6160 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 5925 310 )
+       ( pt 6080 450 ) ) )
+     ( net
+      ( rename net336 "net@336" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_25 ) )
+       ( portRef difftop
+        ( instanceRef nmos_26 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 6665 360 )
+       ( pt 6725 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 6545 240 )
+       ( pt 6845 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 6625 320 )
+       ( pt 6765 460 ) ) )
+     ( net
+      ( rename net341 "net@341" )
+      ( joined
+       ( portRef polyright
+        ( instanceRef nmos_22 ) )
+       ( portRef diffbottom
+        ( instanceRef nmos_27 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_22 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_27 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 4245 310 )
+       ( pt 4320 370 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 4125 190 )
+       ( pt 4440 490 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 4205 270 )
+       ( pt 4360 410 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt 4245 1500 )
+       ( pt 4320 1560 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt 4125 1380 )
+       ( pt 4440 1680 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt 4205 1460 )
+       ( pt 4360 1600 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 4250 1110 )
+       ( pt 4330 1570 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 4250 1110 )
+       ( pt 5110 1190 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt 4250 300 )
+       ( pt 4330 1190 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 5110 1120 )
+       ( pt 5150 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 5110 500 )
+       ( pt 5150 1160 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 5050 1120 )
+       ( pt 5150 1160 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 5050 500 )
+       ( pt 5150 540 ) ) )
+     ( net
+      ( rename net397 "net@397" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_21 ) )
+       ( portRef difftop
+        ( instanceRef nmos_22 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 4965 360 )
+       ( pt 5025 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 4845 240 )
+       ( pt 5145 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 4925 320 )
+       ( pt 5065 460 ) ) )
+     ( net
+      ( rename net420 "net@420" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_23 ) )
+       ( portRef difftop
+        ( instanceRef nmos_24 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt 5815 360 )
+       ( pt 5875 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt 5695 240 )
+       ( pt 5995 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt 5775 320 )
+       ( pt 5915 460 ) ) )
+     ( net
+      ( rename net429 "net@429" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_29 ) )
+       ( portRef polyright
+        ( instanceRef nmos_33 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_28 ) )
+       ( portRef difftop
+        ( instanceRef pmos_29 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_33 ) ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -7040 1170 )
+       ( pt -7000 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -7040 500 )
+       ( pt -7000 1210 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -7100 1170 )
+       ( pt -7000 1210 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -7100 500 )
+       ( pt -7000 540 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -8370 1140 )
+       ( pt -7050 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7130 1140 )
+       ( pt -7040 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8620 420 )
+       ( pt -8540 1200 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8620 1120 )
+       ( pt -8540 1410 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -8620 1140 )
+       ( pt -8290 1220 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -7130 1140 )
+       ( pt -7050 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7130 1140 )
+       ( pt -7040 1220 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -8885 1660 )
+       ( pt -8780 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -9005 1540 )
+       ( pt -8660 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -8925 1620 )
+       ( pt -8740 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8860 1330 )
+       ( pt -8650 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8860 1330 )
+       ( pt -8780 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8730 340 )
+       ( pt -8650 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -8840 1660 )
+       ( pt -8765 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -8960 1540 )
+       ( pt -8645 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -8880 1620 )
+       ( pt -8725 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8730 420 )
+       ( pt -8540 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8730 1330 )
+       ( pt -8540 1410 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -8735 350 )
+       ( pt -8660 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -8855 230 )
+       ( pt -8540 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -8775 310 )
+       ( pt -8620 450 ) ) )
+     ( net
+      ( rename net432 "net@432" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_31 ) )
+       ( portRef polyright
+        ( instanceRef nmos_32 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_30 ) )
+       ( portRef difftop
+        ( instanceRef pmos_31 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_32 ) ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -7250 860 )
+       ( pt -7210 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -7250 500 )
+       ( pt -7210 900 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -7330 860 )
+       ( pt -7210 900 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7340 840 )
+       ( pt -7260 930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7630 840 )
+       ( pt -7260 920 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -8035 1660 )
+       ( pt -7930 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -8155 1540 )
+       ( pt -7810 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -8075 1620 )
+       ( pt -7890 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8010 1330 )
+       ( pt -7800 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -8010 1330 )
+       ( pt -7930 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7880 340 )
+       ( pt -7800 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -7990 1660 )
+       ( pt -7915 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -8110 1540 )
+       ( pt -7795 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -8030 1620 )
+       ( pt -7875 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7880 420 )
+       ( pt -7690 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7880 1330 )
+       ( pt -7690 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7770 420 )
+       ( pt -7690 920 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7770 840 )
+       ( pt -7690 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -7770 840 )
+       ( pt -7550 920 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -7885 350 )
+       ( pt -7810 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -8005 230 )
+       ( pt -7690 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -7925 310 )
+       ( pt -7770 450 ) ) )
+     ( net
+      ( rename net442 "net@442" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_32 ) )
+       ( portRef difftop
+        ( instanceRef nmos_33 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -7185 360 )
+       ( pt -7125 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -7305 240 )
+       ( pt -7005 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -7225 320 )
+       ( pt -7085 460 ) ) )
+     ( net
+      ( rename net447 "net@447" )
+      ( joined
+       ( portRef polyright
+        ( instanceRef nmos_29 ) )
+       ( portRef diffbottom
+        ( instanceRef nmos_34 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_29 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_34 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -9605 310 )
+       ( pt -9530 370 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -9725 190 )
+       ( pt -9410 490 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -9645 270 )
+       ( pt -9490 410 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -9605 1500 )
+       ( pt -9530 1560 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -9725 1380 )
+       ( pt -9410 1680 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -9645 1460 )
+       ( pt -9490 1600 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -9600 1110 )
+       ( pt -9520 1570 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -9600 1110 )
+       ( pt -8740 1190 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -9600 300 )
+       ( pt -9520 1190 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -8740 1120 )
+       ( pt -8700 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -8740 500 )
+       ( pt -8700 1160 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -8800 1120 )
+       ( pt -8700 1160 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -8800 500 )
+       ( pt -8700 540 ) ) )
+     ( net
+      ( rename net5 "net@5" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_1 ) )
+       ( portRef polyright
+        ( instanceRef nmos_5 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_0 ) )
+       ( portRef difftop
+        ( instanceRef pmos_1 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_5 ) ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 50 1170 )
+       ( pt 90 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt 50 500 )
+       ( pt 90 1210 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -10 1170 )
+       ( pt 90 1210 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -10 500 )
+       ( pt 90 540 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -1280 1140 )
+       ( pt 40 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -40 1140 )
+       ( pt 50 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1530 420 )
+       ( pt -1450 1200 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1530 1120 )
+       ( pt -1450 1410 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -1530 1140 )
+       ( pt -1200 1220 ) )
+      ( figureGroupOverride Metal2 )
+      ( rectangle
+       ( pt -40 1140 )
+       ( pt 40 1220 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -40 1140 )
+       ( pt 50 1220 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -1795 1660 )
+       ( pt -1690 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -1915 1540 )
+       ( pt -1570 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -1835 1620 )
+       ( pt -1650 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1770 1330 )
+       ( pt -1560 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1770 1330 )
+       ( pt -1690 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1640 340 )
+       ( pt -1560 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -1750 1660 )
+       ( pt -1675 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -1870 1540 )
+       ( pt -1555 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -1790 1620 )
+       ( pt -1635 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1640 420 )
+       ( pt -1450 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -1640 1330 )
+       ( pt -1450 1410 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -1645 350 )
+       ( pt -1570 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -1765 230 )
+       ( pt -1450 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -1685 310 )
+       ( pt -1530 450 ) ) )
+     ( net
+      ( rename net503 "net@503" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_28 ) )
+       ( portRef difftop
+        ( instanceRef nmos_29 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -8885 360 )
+       ( pt -8825 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -9005 240 )
+       ( pt -8705 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -8925 320 )
+       ( pt -8785 460 ) ) )
+     ( net
+      ( rename net526 "net@526" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_30 ) )
+       ( portRef difftop
+        ( instanceRef nmos_31 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -8035 360 )
+       ( pt -7975 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -8155 240 )
+       ( pt -7855 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -8075 320 )
+       ( pt -7935 460 ) ) )
+     ( net
+      ( rename net79 "net@79" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_0 ) )
+       ( portRef difftop
+        ( instanceRef nmos_1 ) ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -1795 360 )
+       ( pt -1735 420 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -1915 240 )
+       ( pt -1615 540 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -1835 320 )
+       ( pt -1695 460 ) ) )
+     ( net
+      ( rename net8 "net@8" )
+      ( joined
+       ( portRef diffbottom
+        ( instanceRef nmos_3 ) )
+       ( portRef polyright
+        ( instanceRef nmos_4 ) )
+       ( portRef diffbottom
+        ( instanceRef pmos_2 ) )
+       ( portRef difftop
+        ( instanceRef pmos_3 ) )
+       ( portRef polyleft
+        ( instanceRef pmos_4 ) ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -160 860 )
+       ( pt -120 1520 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -160 500 )
+       ( pt -120 900 ) )
+      ( figureGroupOverride Polysilicon1 )
+      ( rectangle
+       ( pt -240 860 )
+       ( pt -120 900 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -250 840 )
+       ( pt -170 930 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -540 840 )
+       ( pt -170 920 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -945 1660 )
+       ( pt -840 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -1065 1540 )
+       ( pt -720 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -985 1620 )
+       ( pt -800 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -920 1330 )
+       ( pt -710 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -920 1330 )
+       ( pt -840 1730 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -790 340 )
+       ( pt -710 500 ) )
+      ( figureGroupOverride PActive )
+      ( rectangle
+       ( pt -900 1660 )
+       ( pt -825 1720 ) )
+      ( figureGroupOverride NWell )
+      ( rectangle
+       ( pt -1020 1540 )
+       ( pt -705 1840 ) )
+      ( figureGroupOverride PSelect )
+      ( rectangle
+       ( pt -940 1620 )
+       ( pt -785 1760 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -790 420 )
+       ( pt -600 500 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -790 1330 )
+       ( pt -600 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -680 420 )
+       ( pt -600 920 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -680 840 )
+       ( pt -600 1410 ) )
+      ( figureGroupOverride Metal1 )
+      ( rectangle
+       ( pt -680 840 )
+       ( pt -460 920 ) )
+      ( figureGroupOverride NActive )
+      ( rectangle
+       ( pt -795 350 )
+       ( pt -720 410 ) )
+      ( figureGroupOverride PWell )
+      ( rectangle
+       ( pt -915 230 )
+       ( pt -600 530 ) )
+      ( figureGroupOverride NSelect )
+      ( rectangle
+       ( pt -835 310 )
+       ( pt -680 450 ) ) ) ) ) ) )
+ ( design X4bitshifter
+  ( cellRef X4bitshifter
+   ( libraryRef newproj ) ) ) )
